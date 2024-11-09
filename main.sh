@@ -2,7 +2,7 @@
 
 sudo chmod +x utility.sh structure/cleanup.sh structure/home_setup.sh pkgs/dev_pkgs.sh pkgs/main_pkgs.sh
 
-sudo apt -y update && sudo apt upgrade
+sudo apt -y update && sudo apt -y upgrade
 
 echo "Installing utility"
 sudo bash utility.sh
