@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install curl \
+sudo apt -y install curl \
 	wget \
 	vim \
 	nano \

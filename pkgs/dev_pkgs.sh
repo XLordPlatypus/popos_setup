@@ -8,18 +8,13 @@ source ~/.bashrc
 nvm install --lts
 
 # --- Clang ---
-sudo apt install clang
+sudo apt -y install clang
 sudo apt install clangd
 
-# --- MingW ---
-sudo apt install msys2
-source ~/.bashrc
-mingw-get install mingw-w64-x86_64-gcc
+# --- CMake ---
+sudo apt -y install cmake
 
-# CMake
-sudo apt install cmake
-
-# Make
-sudo apt install make
+# --- Make ---
+sudo apt -y install make
 
 

@@ -2,17 +2,20 @@
 
 sudo chmod +x utility.sh structure/cleanup.sh structure/home_setup.sh pkgs/dev_pkgs.sh pkgs/main_pkgs.sh
 
-sudo apt update && sudo apt upgrade
+sudo apt -y update && sudo apt upgrade
 
 echo "Installing utility"
 sudo bash utility.sh
 echo "Cleanup in progress"
-sudo bash structure/cleanup.sh
+cd structure
+sudo bash cleanup.sh
 echo "Creating home setup"
-sudo bash structure/home_setup.sh
+sudo bash home_setup.sh
 echo "Installing dev packages"
-sudo bash pkgs/dev_pkgs.sh
+cd ..
+cd pkgs
+sudo bash dev_pkgs.sh
 echo "Installing main packages"
-sudo bash pkgs/main_pkgs.sh
+sudo bash main_pkgs.sh
 
 echo "Installation finished. Please reboot."
