@@ -48,10 +48,10 @@ echo \
   sudo tee /etc/apt/sources.list.d/docker.list > /dev/null
 sudo apt-get update
 
-sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
+sudo apt-get -y install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
 wget https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb "home/$LOGNAME/dev/software"
 sudo dpkg -i ./docker-desktop-amd64.deb
 
 sudo apt-get update
-sudo apt-get install ./docker-desktop-amd64.deb
+sudo apt-get -y install ./docker-desktop-amd64.deb
