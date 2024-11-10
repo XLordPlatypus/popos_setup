@@ -1,6 +1,7 @@
 ## Simple setup script for Pop!_Os packages
 
-This script creates homefolders and install packages.
+This script creates homefolders and installs packages.
+Also deletes geary, firefox and more.
 
 ## Setup
 
