@@ -13,23 +13,23 @@ sudo apt -y install brave-browser
 sudo apt -y install discord
 
 # --- Logseq ---
-wget https://github.com/logseq/logseq/releases/download/0.10.9/Logseq-linux-x64-0.10.9.AppImage "~/dev/software"
-sudo dpkg -i ~/dev/software/Logseq-linux-x64-0.10.9.AppImage
+wget https://github.com/logseq/logseq/releases/download/0.10.9/Logseq-linux-x64-0.10.9.AppImage "home/$LOGNAME/dev/software"
+sudo apt-get install ./0.10.9/Logseq-linux-x64-0.10.9.AppImage
 
 # --- VSCodium ---
-wget https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_1.95.1.24307_amd64.deb "~/dev/software"
+wget https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_1.95.1.24307_amd64.deb "home/$LOGNAME/dev/software"
 sudo dpkg -i ~/dev/software/codium_1.95.1.24307_amd64.deb
 
 # --- Zed-Editor ---
-cd ~/dev/software
+cd home/$LOGNAME/dev/software
 curl -f https://zed.dev/install.sh | sh
-cd ~
+cd home/$LOGNAME
 
 # --- Godot ---
-cd ~/dev/software
+cd home/$LOGNAME/dev/software
 wget https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
 unzip Godot_v4.3-stable_linux.x86_64.zip
-cd ~
+cd home/$LOGNAME
 
 # --- Docker Desktop ---
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
@@ -50,8 +50,8 @@ sudo apt-get update
 
 sudo apt-get install docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-wget https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb "~/dev/software"
-sudo dpkg -i docker-desktop-amd64.deb
+wget https://desktop.docker.com/linux/main/amd64/docker-desktop-amd64.deb "home/$LOGNAME/dev/software"
+sudo dpkg -i ./docker-desktop-amd64.deb
 
 sudo apt-get update
 sudo apt-get install ./docker-desktop-amd64.deb
