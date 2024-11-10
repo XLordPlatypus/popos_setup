@@ -1,5 +1,5 @@
 #!/bin/bash
 
-sudo apt remove firefox
-sudo apt remove geary
-sudo apt autoremove
+sudo apt -y remove firefox
+sudo apt -y remove geary
+sudo apt -y autoremove 
