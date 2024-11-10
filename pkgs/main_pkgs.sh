@@ -21,15 +21,15 @@ wget https://github.com/VSCodium/vscodium/releases/download/1.95.1.24307/codium_
 sudo dpkg -i ~/dev/software/codium_1.95.1.24307_amd64.deb
 
 # --- Zed-Editor ---
-cd home/$LOGNAME/dev/software
+cd /home/$LOGNAME/dev/software
 curl -f https://zed.dev/install.sh | sh
-cd home/$LOGNAME
+cd /home/$LOGNAME
 
 # --- Godot ---
-cd home/$LOGNAME/dev/software
+cd /home/$LOGNAME/dev/software
 wget https://github.com/godotengine/godot/releases/download/4.3-stable/Godot_v4.3-stable_linux.x86_64.zip
 unzip Godot_v4.3-stable_linux.x86_64.zip
-cd home/$LOGNAME
+cd /home/$LOGNAME
 
 # --- Docker Desktop ---
 for pkg in docker.io docker-doc docker-compose docker-compose-v2 podman-docker containerd runc; do sudo apt-get remove $pkg; done
