@@ -9,7 +9,7 @@ nvm install --lts
 
 # --- Clang ---
 sudo apt -y install clang
-sudo apt install clangd
+sudo apt -y install clangd
 
 # --- CMake ---
 sudo apt -y install cmake
