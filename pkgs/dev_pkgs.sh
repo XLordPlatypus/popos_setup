@@ -2,7 +2,7 @@
 
 # --- Node Version Manager ---
 wget -qO- https://raw.githubusercontent.com/nvm-sh/nvm/v0.40.1/install.sh | bash
-source ~/.bashrc
+source home/$LOGNAME/.bashrc
 
 # --- Node ---
 nvm install --lts
